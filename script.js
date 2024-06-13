@@ -4,7 +4,7 @@
  *
  * Make sure you read the lesson and watch the in-class demo.
  *
- * Author:
+ * Author: YANN ARMSTRONG
  */
 
 'use strict';
