@@ -29,3 +29,32 @@ function enter() {
 function move() {
   document.getElementById("move_span").innerText = ++mousemove_count;
 }
+
+// Secrete Button code
+document.getElementById("btn_show_hide").addEventListener("click", show_text_click);
+
+function show_text_click() {
+    let hiddenDiv = document.getElementById("hidden_text");
+    hiddenDiv.hidden = !hiddenDiv.hidden;
+}
+
+// Spacebar code
+window.addEventListener("keydown", track_key);
+
+function track_key(event) {
+    if (event.key == " " || "h") {
+        show_text_click();
+    }
+    console.log(event.key)
+}
+
+// DOOR STUFF
+let doorImg = document.getElementById("door");
+
+doorImg.addEventListener("mouseenter", function() {
+    doorImg.src = "images/Screenshot 2024-06-13 13.52.25.png";
+});
+
+doorImg.addEventListener("mouseleave", function() {
+    doorImg.src = "images/Screenshot 2024-06-13 13.52.51.png"; 
+});

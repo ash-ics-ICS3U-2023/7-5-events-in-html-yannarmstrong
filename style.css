@@ -3,6 +3,10 @@ html {
   width: 100%;
 }
 
+body{
+  padding: 10px;
+}
+
 .footer {
   margin: 0;
   padding: 10px;
@@ -30,4 +34,9 @@ div.normal {
 
 h3.mouse {
   background-color: white;
+}
+
+#door {
+  width: 200px;
+  height: 300px;
 }
